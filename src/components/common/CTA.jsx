@@ -46,8 +46,8 @@ export default function CTA() {
         </p>
         
         <div className="hero-btns" style={{ marginBottom: 40 }}>
-          <button className="btn-primary" onClick={() => window.location.href = `mailto:${COMPANY_INFO.email}`}>Contact Us</button>
-          <button className="btn-ghost" onClick={() => window.location.href = COMPANY_INFO.telegram}>Start a Project</button>
+          <a href={`mailto:${COMPANY_INFO.email}`} className="btn-primary">Contact Us</a>
+          <a href={COMPANY_INFO.telegram} target="_blank" rel="noopener noreferrer" className="btn-ghost">Start a Project</a>
         </div>
 
         <div className="cta-info-grid">
