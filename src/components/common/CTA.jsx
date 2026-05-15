@@ -9,11 +9,24 @@ const Github = ({ size = 20 }) => (
   </svg>
 );
 
+const Youtube = ({ size = 20 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path>
+    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+  </svg>
+);
+
 const Linkedin = ({ size = 20 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
     <rect x="2" y="9" width="4" height="12"></rect>
     <circle cx="4" cy="4" r="2"></circle>
+  </svg>
+);
+
+const Tiktok = ({ size = 20 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
   </svg>
 );
 
@@ -57,8 +70,10 @@ export default function CTA() {
         </div>
 
         <div className="cta-socials-row">
-          <a href={COMPANY_INFO.github} target="_blank" rel="noopener noreferrer" className="social-link"><Github size={20} /></a>
-          <a href={COMPANY_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="social-link"><Linkedin size={20} /></a>
+          <a href={COMPANY_INFO.github} target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub"><Github size={20} /></a>
+          <a href={COMPANY_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn"><Linkedin size={20} /></a>
+          <a href={COMPANY_INFO.youtube} target="_blank" rel="noopener noreferrer" className="social-link" title="YouTube"><Youtube size={20} /></a>
+          <a href={COMPANY_INFO.tiktok} target="_blank" rel="noopener noreferrer" className="social-link" title="TikTok"><Tiktok size={20} /></a>
         </div>
       </motion.div>
     </section>

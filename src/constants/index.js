@@ -137,7 +137,9 @@ export const COMPANY_INFO = {
   shortName: 'SHEBA DIGITAL',
   email: 'shebadigital24@gmail.com',
   telegram: 'https://t.me/shebadigital',
-  github: 'https://github.com/shebadigital',
+  github: 'https://github.com/shebadigital24',
+  tiktok: 'https://www.tiktok.com/@sheba_digital',
+  youtube: 'https://www.youtube.com/@ShebaDigitalET',
   linkedin: 'https://linkedin.com/company/shebadigital',
   tagline: 'Engineering the future with AI automation, cloud scaling, and cyber resilience solutions.'
 };
